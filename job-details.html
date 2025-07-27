@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Description</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: url('https://plus.unsplash.com/premium_photo-1677020308262-4f150d263a08?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      position: relative;
+      z-index: 0;
+      padding: 0;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(20, 20, 20, 0.8);
+      z-index: -1;
+    }
+
+    .job-container {
+      max-width: 800px;
+      margin: 100px auto 60px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      color: #ffffff;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 25px;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    ul {
+      margin-bottom: 30px;
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a.back {
+      color: #ffffff;
+      text-decoration: underline;
+      display: inline-block;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    .btn-apply {
+      display: block;
+      margin: 10px auto 0;
+      background-color: #ffffff;
+      color: #001f3f;
+      padding: 12px 26px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      text-align: center;
+      width: fit-content;
+    }
+
+    .btn-apply:hover {
+      background-color: #ff6b6b;
+      color: #ffffff;
+    }
+
+    @media (max-width: 600px) {
+      .job-container {
+        padding: 25px 20px;
+        margin: 80px 15px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      .btn-apply {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="job-container">
+    <a href="index.html" class="back">← Back to Listings</a>
+    <h1 id="job-title">Job Title</h1>
+    <p id="job-intro"></p>
+    <h2>Responsibilities</h2>
+    <ul id="job-responsibilities"></ul>
+    <h2>Requirements</h2>
+    <ul id="job-requirements"></ul>
+
+    <a href="#" class="btn-apply">Apply Now ➔</a>
+  </div>
+
+  <script>
+    const roles = {
+      "product-designer": {
+        title: "🎨 Product Designer",
+        intro: "Help shape user experiences through thoughtful design. Collaborate with engineers, PMs, and users.",
+        responsibilities: [
+          "Create user-centered designs with Figma or Adobe XD",
+          "Work closely with developers and stakeholders",
+          "Build and maintain design systems"
+        ],
+        requirements: [
+          "2+ years of UI/UX experience",
+          "Proficiency in Figma / Sketch / Adobe XD",
+          "Strong communication and collaboration skills"
+        ]
+      },
+      "hybrid-developer": {
+        title: "💻 Hybrid Developer",
+        intro: "Write clean, maintainable code across frontend and backend. Build full-stack experiences end-to-end.",
+        responsibilities: [
+          "Develop and maintain scalable applications",
+          "Integrate APIs, databases, and authentication",
+          "Collaborate with designers and product managers"
+        ],
+        requirements: [
+          "3+ years of full-stack experience",
+          "Proficiency in JavaScript/TypeScript, React or Vue, Node.js",
+          "Familiarity with deployment tools and cloud platforms"
+        ]
+      },
+      "devops-expert": {
+        title: "⚙️ DevOps Expert",
+        intro: "Automate infrastructure and CI/CD pipelines. Ensure systems run reliably and securely at scale.",
+        responsibilities: [
+          "Manage cloud infrastructure (AWS, GCP, or Azure)",
+          "Build and optimize CI/CD workflows",
+          "Monitor and improve application performance"
+        ],
+        requirements: [
+          "3+ years in DevOps/SRE roles",
+          "Strong experience with Docker, Kubernetes, GitHub Actions",
+          "Experience with observability and monitoring tools"
+        ]
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const roleKey = params.get("role");
+    const role = roles[roleKey];
+
+    if (role) {
+      document.getElementById("job-title").textContent = role.title;
+      document.getElementById("job-intro").textContent = role.intro;
+
+      const resList = document.getElementById("job-responsibilities");
+      role.responsibilities.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        resList.appendChild(li);
+      });
+
+      const reqList = document.getElementById("job-requirements");
+      role.requirements.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        reqList.appendChild(li);
+      });
+    } else {
+      document.querySelector(".job-container").innerHTML = "<p>Job not found. <a href='index.html'>Go back</a>.</p>";
+    }
+  </script>
+</body>
+</html>
