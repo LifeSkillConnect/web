@@ -3,12 +3,14 @@ import './App.css';
 import LanguageSelectionModal from './components/onboarding/LanguageSelectionModal';
 import SignupModal from './components/onboarding/SignupModal';
 import OTPVerificationModal from './components/onboarding/OTPVerificationModal';
+import AccountSetupModal from './components/onboarding/AccountSetupModal';
 import './assets/fonts/satoshi.css';
 
 function App() {
   const [showLanguageModal, setShowLanguageModal] = useState(true);
   const [showSignupModal, setShowSignupModal] = useState(false);
   const [showOTPModal, setShowOTPModal] = useState(false);
+  const [showAccountSetupModal, setShowAccountSetupModal] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('');
   const [userEmail, setUserEmail] = useState('');
 
@@ -61,6 +63,26 @@ function App() {
     console.log('User email:', userEmail);
     // Process OTP verification
     setShowOTPModal(false);
+    setShowAccountSetupModal(true);
+  };
+
+  const handleCloseAccountSetupModal = () => {
+    setShowAccountSetupModal(false);
+  };
+
+  const handleAccountSetupComplete = (formData) => {
+    console.log('Account setup completed:', formData);
+    console.log('Selected language:', selectedLanguage);
+    console.log('User email:', userEmail);
+    // Process account setup completion
+    setShowAccountSetupModal(false);
+    // Navigate to main app or dashboard
+  };
+
+  const handleSignInFromAccountSetup = () => {
+    console.log('Sign in clicked from account setup modal');
+    setShowAccountSetupModal(false);
+    // Navigate to sign in screen (to be implemented)
   };
 
   return (
@@ -85,6 +107,13 @@ function App() {
         email={userEmail}
         onVerify={handleOTPVerify}
         onBackToSignup={handleBackToSignup}
+      />
+      
+      <AccountSetupModal
+        isOpen={showAccountSetupModal}
+        onClose={handleCloseAccountSetupModal}
+        onNext={handleAccountSetupComplete}
+        onSignIn={handleSignInFromAccountSetup}
       />
     </div>
   );
