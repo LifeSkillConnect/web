@@ -2,7 +2,7 @@
 set -e
 
 echo "Installing dependencies..."
-npm ci
+npm install
 
 echo "Building the application..."
 npm run build

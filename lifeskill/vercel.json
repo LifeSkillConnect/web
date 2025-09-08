@@ -2,7 +2,7 @@
   "version": 2,
   "buildCommand": "bash build.sh",
   "outputDirectory": "build",
-  "installCommand": "npm ci",
+  "installCommand": "npm install",
   "routes": [
     {
       "src": "/static/(.*)",
