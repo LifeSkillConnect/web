@@ -1,0 +1,243 @@
+/* Sidebar Styles */
+
+.sidebar * {
+  font-family: 'Satoshi Variable', sans-serif !important;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 100vh;
+  background: white;
+  border-right: 1px solid #e5e7eb;
+  transition: width 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+/* Collapsed state styles */
+.sidebar-collapsed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  height: 100vh;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.collapsed-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.collapsed-logo .logo {
+  width: 40px;
+  height: 40px;
+}
+
+.expand-button {
+  background: #5A7C65;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(90, 124, 101, 0.3);
+}
+
+.expand-button:hover {
+  background: #4A6B55;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(90, 124, 101, 0.4);
+}
+
+.expand-icon {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-section img {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.logo-text-light {
+  font-weight: 300;
+}
+
+.logo-text-bold {
+  font-weight: 700;
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  color: #6b7280;
+  transition: all 0.2s ease;
+}
+
+.sidebar-toggle:hover {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.nav-section {
+  margin-bottom: 32px;
+}
+
+.nav-section-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 16px 20px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.nav-link.active {
+  background: #f0fdf4;
+  color: #5A7C65;
+  border-right: 3px solid #5A7C65;
+}
+
+.nav-link.active .nav-icon-image {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(25%) saturate(1000%) hue-rotate(90deg) brightness(0.8) contrast(1);
+}
+
+.nav-icon {
+  font-size: 20px;
+  min-width: 20px;
+}
+
+.nav-icon-image {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  min-width: 20px;
+  filter: brightness(0) saturate(100%) invert(60%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0.6) contrast(1);
+}
+
+.nav-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* These styles are now handled by the conditional rendering in JSX */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar.collapsed {
+    width: 80px;
+    transform: translateX(0);
+  }
+  
+  .sidebar-collapsed {
+    padding: 15px 0;
+    gap: 15px;
+  }
+  
+  .collapsed-logo .logo {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .expand-button {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .expand-icon {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+  }
+}

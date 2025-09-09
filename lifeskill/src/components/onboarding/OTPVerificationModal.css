@@ -60,7 +60,7 @@
   overflow: visible;
   position: relative;
   transition: all 0.3s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .otp-modal-container.modal-enter {
@@ -114,7 +114,7 @@
 .logo-text {
   color: white;
   font-size: 24px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .logo-text-light {
@@ -136,7 +136,7 @@
   font-size: 32px;
   font-weight: 700;
   margin: 0 0 12px 0;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,7 +152,7 @@
   font-size: 16px;
   font-weight: 400;
   margin: 0 0 8px 0;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .email-display {
@@ -160,7 +160,7 @@
   font-size: 16px;
   font-weight: 500;
   margin: 0;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 /* OTP Input Container */
@@ -181,7 +181,7 @@
   font-size: 24px;
   font-weight: 600;
   text-align: center;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   transition: all 0.2s ease;
 }
 
@@ -207,7 +207,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   margin-bottom: 24px;
 }
 
@@ -233,7 +233,7 @@
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .resend-link {

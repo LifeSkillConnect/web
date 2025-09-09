@@ -63,7 +63,7 @@
   overflow: visible;
   position: relative;
   transition: all 0.3s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -95,7 +95,7 @@
 .account-setup-logo-text {
   color: white;
   font-size: 24px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .account-setup-logo-text-light {
@@ -117,7 +117,7 @@
   font-size: 36px;
   font-weight: 700;
   margin: 0 0 6px 0;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,7 +128,7 @@
   font-size: 16px;
   font-weight: 400;
   margin: 0;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 /* Form Styles */
@@ -146,7 +146,7 @@
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 8px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -161,7 +161,7 @@
   color: white;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   transition: all 0.2s ease;
   box-sizing: border-box;
   margin-left: auto;
@@ -188,7 +188,7 @@
   color: #ff6b6b;
   font-size: 12px;
   margin-top: 4px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 /* Date Input Container */
@@ -253,7 +253,7 @@
   justify-content: space-between;
   align-items: center;
   transition: all 0.2s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -307,7 +307,7 @@
   font-size: 14px;
   font-weight: 400;
   transition: background-color 0.2s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .account-setup-dropdown-item:hover {
@@ -331,7 +331,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
@@ -352,7 +352,7 @@
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .account-setup-signin-link {

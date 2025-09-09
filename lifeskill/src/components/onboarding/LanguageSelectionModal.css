@@ -65,7 +65,7 @@
   overflow: visible;
   position: relative;
   transition: all 0.3s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .modal-container.modal-enter {
@@ -95,7 +95,7 @@
 .logo-text {
   color: white;
   font-size: 24px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .logo-text-light {
@@ -117,7 +117,7 @@
   font-size: 36px;
   font-weight: 700;
   margin: 0 0 8px 0;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,7 +133,7 @@
   font-size: 16px;
   font-weight: 400;
   margin: 0;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   text-align: center;
 }
 
@@ -153,7 +153,7 @@
   justify-content: space-between;
   align-items: center;
   transition: all 0.2s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .dropdown:hover {
@@ -204,7 +204,7 @@
   font-size: 14px;
   font-weight: 400;
   transition: background-color 0.2s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .dropdown-item:hover {
@@ -228,7 +228,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   margin-bottom: 24px;
 }
 
@@ -257,7 +257,7 @@
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .signin-link {

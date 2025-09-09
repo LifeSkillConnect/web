@@ -1,0 +1,48 @@
+/* Material Icons Local CSS */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fallback icons using Unicode symbols */
+.material-icons[data-icon="apps"]:before { content: "☰"; }
+.material-icons[data-icon="search"]:before { content: "🔍"; }
+.material-icons[data-icon="notifications"]:before { content: "🔔"; }
+.material-icons[data-icon="verified"]:before { content: "✓"; }
+.material-icons[data-icon="folder_open"]:before { content: "📁"; }
+.material-icons[data-icon="check_circle"]:before { content: "✓"; }
+.material-icons[data-icon="card_giftcard"]:before { content: "🎁"; }
+.material-icons[data-icon="workspace_premium"]:before { content: "🏆"; }
+.material-icons[data-icon="favorite"]:before { content: "❤"; }
+.material-icons[data-icon="menu"]:before { content: "☰"; }
+.material-icons[data-icon="close"]:before { content: "✕"; }
+.material-icons[data-icon="grid_view"]:before { content: "⊞"; }
+.material-icons[data-icon="folder"]:before { content: "📁"; }
+.material-icons[data-icon="library_books"]:before { content: "📚"; }
+.material-icons[data-icon="smart_toy"]:before { content: "🤖"; }
+.material-icons[data-icon="person"]:before { content: "👤"; }
+.material-icons[data-icon="work"]:before { content: "💼"; }
+.material-icons[data-icon="chat"]:before { content: "💬"; }
+.material-icons[data-icon="report"]:before { content: "⚠"; }
+.material-icons[data-icon="place"]:before { content: "📍"; }
+
+/* Ensure icons are visible */
+.material-icons {
+  color: inherit;
+  vertical-align: middle;
+}

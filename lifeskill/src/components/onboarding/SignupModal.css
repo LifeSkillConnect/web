@@ -69,7 +69,7 @@ html, body {
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -101,7 +101,7 @@ html, body {
 .logo-text {
   color: white;
   font-size: 24px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .logo-text-light {
@@ -123,7 +123,7 @@ html, body {
   font-size: 36px;
   font-weight: 700;
   margin: 0 0 6px 0;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,7 +139,7 @@ html, body {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   text-align: center;
 }
 
@@ -159,7 +159,7 @@ html, body {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -208,7 +208,7 @@ html, body {
   font-size: 14px;
   font-weight: 400;
   margin: 0 16px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 /* Form Fields */
@@ -226,7 +226,7 @@ html, body {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 8px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -272,7 +272,7 @@ html, body {
   color: white;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   transition: all 0.2s ease;
 }
 
@@ -358,7 +358,7 @@ input:-webkit-autofill:active {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
   margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
@@ -387,7 +387,7 @@ input:-webkit-autofill:active {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi Variable', sans-serif;
 }
 
 .signin-link {

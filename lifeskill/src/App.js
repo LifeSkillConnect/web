@@ -4,13 +4,16 @@ import LanguageSelectionModal from './components/onboarding/LanguageSelectionMod
 import SignupModal from './components/onboarding/SignupModal';
 import OTPVerificationModal from './components/onboarding/OTPVerificationModal';
 import AccountSetupModal from './components/onboarding/AccountSetupModal';
+import Dashboard from './components/dashboard/Dashboard';
 import './assets/fonts/satoshi.css';
+import './assets/css/material-icons.css';
 
 function App() {
-  const [showLanguageModal, setShowLanguageModal] = useState(true);
+  const [showLanguageModal, setShowLanguageModal] = useState(false);
   const [showSignupModal, setShowSignupModal] = useState(false);
   const [showOTPModal, setShowOTPModal] = useState(false);
   const [showAccountSetupModal, setShowAccountSetupModal] = useState(false);
+  const [showDashboard, setShowDashboard] = useState(true); // Set to true for testing
   const [selectedLanguage, setSelectedLanguage] = useState('');
   const [userEmail, setUserEmail] = useState('');
 
@@ -76,7 +79,7 @@ function App() {
     console.log('User email:', userEmail);
     // Process account setup completion
     setShowAccountSetupModal(false);
-    // Navigate to main app or dashboard
+    setShowDashboard(true);
   };
 
   const handleSignInFromAccountSetup = () => {
@@ -115,6 +118,8 @@ function App() {
         onNext={handleAccountSetupComplete}
         onSignIn={handleSignInFromAccountSetup}
       />
+
+      {showDashboard && <Dashboard />}
     </div>
   );
 }
